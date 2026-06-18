@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Tweet Source</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          <path d="m14 9-4 4"></path>
+          <path d="M10 9h4v4"></path>
+        </svg>
+      </div>
+      <div class="title-container">
+        <h1>X Source Label</h1>
+        <p class="subtitle">Edge Extension Active</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="status-box">
+      <div class="status-indicator">
+        <div class="pulse-dot"></div>
+        <span>System Status</span>
+      </div>
+      <div class="status-badge">Running</div>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-card">
+        <span class="stat-label">Labels Restored</span>
+        <span class="stat-number" id="recovered-count">0</span>
+      </div>
+    </div>
+
+    <div class="info-footer">
+      <p>Scroll through your feed on X/Twitter to automatically reveal post sources (e.g. iPhone, Android, Web).</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
